@@ -1,0 +1,7 @@
+//@version=6
+
+indicator("basit indicator") //That command gives to name of indicator
+kisa_sma = ta.sma(close,14)
+uzun_sma = ta.sma(close, 50)
+plot(kisa_sma, color =color.blue, linewidth = 2, title = "14 günlük ortalama")
+plot(uzun_sma, color = color.red, linewidth = 2, title = "50 günlük ortalama")
